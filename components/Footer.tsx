@@ -4,16 +4,16 @@ import { FiMail, FiPhone, FiMapPin, FiHeart, FiTwitter, FiFacebook, FiInstagram 
 
 const Footer = () => {
   return (
-    <footer className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white  overflow-hidden">
+    <footer className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden">
       {/* Animated Background Elements - Matching dark theme */}
-      <div className="absolute inset-0 ">
+      <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-96 h-96 bg-pink-600/5 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-pink-700/5 rounded-full blur-3xl animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-pink-500/5 rounded-full blur-3xl animate-float"></div>
       </div>
 
-      <div className="relative max-w-7xl mx-auto px-4 py-12 ml-10 mr-20">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* About - Dark theme optimized */}
           <div className="group">
             <h3 className="font-serif text-2xl font-black tracking-wider mb-4 bg-gradient-to-r from-pink-400 to-gray-300 bg-clip-text text-transparent">
@@ -43,7 +43,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links - Dark theme optimized */}
-          <div className="group ">
+          <div className="group">
             <h4 className="font-serif text-lg font-bold tracking-wide mb-4 relative inline-block text-white">
               Quick Links
               <span className="absolute -bottom-2 left-0 w-12 h-0.5 bg-pink-500 group-hover:w-full transition-all duration-500"></span>
@@ -124,7 +124,7 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Your email"
-                  className="flex-1 px-4 py-2 bg-gray-800 border border-gray-700 rounded-l-lg focus:outline-none focus:border-pink-500 text-gray-300 placeholder-gray-500 font-sans text-sm"
+                  className="flex-1 min-w-0 px-4 py-2 bg-gray-800 border border-gray-700 rounded-l-lg focus:outline-none focus:border-pink-500 text-gray-300 placeholder-gray-500 font-sans text-sm"
                 />
                 <button className="px-4 py-2 bg-pink-600 text-white rounded-r-lg hover:bg-pink-700 transition-all duration-300 font-sans text-sm font-medium">
                   Subscribe
@@ -138,7 +138,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright - Dark theme optimized */}
-            <p className="font-sans text-gray-400 text-sm tracking-wide group">
+            <p className="font-sans text-gray-400 text-sm tracking-wide group text-center md:text-left">
               &copy; {new Date().getFullYear()} 
               <span className="mx-1 font-serif font-semibold text-pink-400 group-hover:text-pink-300 transition-colors duration-300">
                 FashionStore
