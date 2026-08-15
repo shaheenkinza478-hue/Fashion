@@ -1,6 +1,9 @@
 // components/Navbar.tsx
 'use client';
+ 
 
+// Body ke andar
+ 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -161,6 +164,7 @@ const Navbar = () => {
             isOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
           }`}
         >
+          
           <div className="py-4 space-y-2 border-t border-gray-800">
             {navLinks.map((link, index) => {
               const Icon = link.icon;

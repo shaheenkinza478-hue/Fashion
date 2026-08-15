@@ -1,8 +1,10 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
- import Navbar from '../../components/Navbar';
+import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import Chatbot from '../../components/Chatbot'; // <--- yeh add karein
+
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -23,6 +25,7 @@ export default function RootLayout({
           <main className="flex-grow">{children}</main>
           <Footer />
         </div>
+        <Chatbot /> {/* <--- yeh line add karein */}
       </body>
     </html>
   );
