@@ -1,9 +1,6 @@
 // components/Navbar.tsx
 'use client';
- 
 
-// Body ke andar
- 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -58,14 +55,23 @@ const Navbar = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 sm:h-20">
-          {/* Logo - Adjusted for 320px */}
-          <Link href="/" className="group relative flex-shrink-0">
-            <span className="font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl font-black tracking-wider bg-gradient-to-r from-pink-400 to-gray-300 bg-clip-text text-transparent">
-              FASHION
-            </span>
-            <span className="font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl font-black tracking-wider text-pink-400 relative ml-0.5 sm:ml-1">
-              STORE
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-400 group-hover:w-full transition-all duration-300"></span>
+          {/* Logo - Image + Text Combination (BMW Style) */}
+          <Link href="/" className="group relative flex-shrink-0 flex items-center gap-2">
+            {/* Logo Image */}
+            <img 
+              src="/f.jpg"  // Apni image ka path
+              alt="Fashion Store Logo"
+              className="h-10 sm:h-12 md:h-14 w-auto object-contain transition-all duration-300 group-hover:scale-105"
+            />
+            {/* Fashion Store Text */}
+            <span className="flex items-baseline">
+              <span className="font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl font-black tracking-wider bg-gradient-to-r from-pink-400 to-gray-300 bg-clip-text text-transparent">
+                FASHION
+              </span>
+              <span className="font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl font-black tracking-wider text-pink-400 relative ml-0.5 sm:ml-1">
+                STORE
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-pink-400 group-hover:w-full transition-all duration-300"></span>
+              </span>
             </span>
           </Link>
 
